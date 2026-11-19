@@ -8,10 +8,12 @@ load_dotenv()
 
 SQLALCHEMY_DATABASE_URL = os.getenv(
     "DATABASE_URL",
-    "mysql+pymysql://root:sabiha%4012345@localhost:3306/ticket_db",
+    f"mysql+pymysql://root:{os.get('sql password')}@localhost:3306/ticket_db",
 )
 
-engine = create_engine(SQLALCHEMY_DATABASE_URL, pool_pre_ping=True)
+connect_args = {"check_same_thread": False} if SQLALCHEMY_DATABASE_URL.startswith("sqlite") else {}
+engine = create_engine(SQLALCHEMY_DATABASE_URL, pool_pre_ping=True, connect_args=connect_args)
+
 
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
