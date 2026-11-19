@@ -1,0 +1,6 @@
+pyproject.toml
+src/ai_weebhook.egg-info/PKG-INFO
+src/ai_weebhook.egg-info/SOURCES.txt
+src/ai_weebhook.egg-info/dependency_links.txt
+src/ai_weebhook.egg-info/requires.txt
+src/ai_weebhook.egg-info/top_level.txt

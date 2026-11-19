@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+pydantic
+httpx
+sqlalchemy
+pymysql
+email-validator
+pandas
+python-dotenv
+google-generativeai

@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-weebhook"
+version = "0.1.0"
+description = "AI Support Ticket Triage System - Forward Deployed Engineer Project"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "pydantic",
+    "httpx",
+    "sqlalchemy",
+    "pymysql",
+    "email-validator",
+    "pandas",
+    "python-dotenv",
+    "google-genai"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: ai-weebhook
+Version: 0.1.0
+Summary: AI Support Ticket Triage System - Forward Deployed Engineer Project
+Requires-Python: >=3.11
+Requires-Dist: fastapi
+Requires-Dist: uvicorn
+Requires-Dist: pydantic
+Requires-Dist: httpx
+Requires-Dist: sqlalchemy
+Requires-Dist: pymysql
+Requires-Dist: email-validator
+Requires-Dist: pandas
+Requires-Dist: python-dotenv
+Requires-Dist: google-generativeai
