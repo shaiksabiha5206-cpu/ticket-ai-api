@@ -7,8 +7,7 @@ from sqlalchemy.orm import sessionmaker, declarative_base
 load_dotenv()
 
 SQLALCHEMY_DATABASE_URL = os.getenv(
-    "DATABASE_URL",
-    f"mysql+pymysql://root:{os.get('sql password')}@localhost:3306/ticket_db",
+    "DATABASE_URL","sqlite:///./tickets.db",
 )
 
 connect_args = {"check_same_thread": False} if SQLALCHEMY_DATABASE_URL.startswith("sqlite") else {}
